@@ -1,4 +1,27 @@
-streamlit==1.28.0
+git add requirements.txt
+git commit -m "Add requirements.txt with sklearn"
+git push
+```
+
+### 3. **Force reboot on Streamlit Cloud**
+
+After pushing:
+1. Go to your Streamlit Cloud dashboard
+2. Click "Manage app" (bottom right)
+3. Click the **⋮** menu (three dots)
+4. Select **"Reboot app"**
+
+This forces Streamlit Cloud to reinstall dependencies from scratch.
+
+### 4. **Check your repository structure**
+
+Your GitHub repository should look like this:
+```
+slimness2.0/
+├── app.py
+├── requirements.txt
+├── augmented_obesity_lifestyle_dataset (1).csv
+└── (other files)streamlit==1.28.0
 pandas==2.0.3
 numpy==1.24.3
 scikit-learn==1.3.0
